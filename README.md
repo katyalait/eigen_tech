@@ -27,5 +27,6 @@
 In order for the words to be parsed, the appropriate files must be uploaded. The system will only work when files are provided via the form. You can upload as many files as you please. 
 When a file is uploaded, the web app creates objects for each of the words and entences and one for the document itself. This system makes filtering much easier later on in the running of web app. I opted for this method as the idea of a persistent system was more appealing to me than a once-off model that would take a long time to run every time a query for popular words was made. This way, one can make many queries one after the other without being held back by processing time. 
 
-
+## Testing
+All tests have been run and verified. To analyse my test coverage open the index.html file in the hashtag_maker/htmlcov/ directory. To verify all tests are OK, run the command `coverage run manage.py test main -v 2` inside of hashtag_maker/hashtag_maker. 
   
