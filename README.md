@@ -5,8 +5,8 @@
 3. Open a console window and navigate to hashtag_maker directory.
 4. Ensure you have virtualenv set up, if not, then run the command `pip3 install virtualenv`.
 5. Run the virtualenv by entering the command `source bin/activate`.
-6. Install the required packages by running `pip3 install -r requirements.txt`.
-7. Navigate to hashtag_maker directory inside your current directory.
+6. Navigate to hashtag_maker directory inside your current directory.
+7. Install the required packages by running `pip3 install -r requirements.txt`.
 8. Run the command `python3 manage.py migrate`.
 9. Run the server by calling `python3 manage.py runserver`.
 10. Open up your preferred browser and go to `localhost:8000/main/`.
