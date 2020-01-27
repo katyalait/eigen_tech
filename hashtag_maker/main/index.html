@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block body_block %}
+<form action="{% url filtered %}" method="GET">
+  <label>Filter by Relation
+    <select name="relation">
+      <option value="all">All</option>
+      <option value="grooms_side">Groom's Side</option>
+      <option value="brides_side">Brides's Side</option>
+      <option value="friends">Friends</option>
+    </select>
+  </label>
+  <input type="submit" value="Filter">
+  </form>
+{% endblock %}

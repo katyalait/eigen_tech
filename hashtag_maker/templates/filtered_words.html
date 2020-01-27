@@ -1,0 +1,52 @@
+{% extends "base.html" %}
+{% block body_block %}
+<h5>Welcome!</h5>
+<p>Type in how many top words you want to see and what documents you want the algorithm to consider.</p>
+<div class="col-md-12">
+  <form action="{% url 'home' %}" method="get">
+    {% csrf_token %}
+    <ul class="list-inline">
+      <li>&nbsp;</li>
+      {{form.as_ul}}
+      <li><input type="submit" value="Filter"></li>
+    </ul>
+  </form>
+</div>
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th scope="col">Word</th>
+      <th scope="col">Documents</th>
+      <th scope="col">Sentences</th>
+      <th scope="col">Occurences</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for key, val in table.items %}
+      <tr>
+      <td>{{ key }}</td>
+      <td>
+        {% for doc in val.documents %}
+          {{ doc }}
+        {% endfor %}
+      </td>
+      <td>
+        <ul>
+          {% for sentence in val.sentences %}
+            <li>
+              {% autoescape off %}
+                {{sentence}}
+              {% endautoescape %}
+            </li>
+          {% endfor %}
+        </ul>
+
+      </td>
+      <td>{{val.occurences}}</td>
+      </tr>
+    {% endfor %}
+  </tbody>
+</table>
+<div class="">
+</div>
+{% endblock %}
