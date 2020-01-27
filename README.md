@@ -7,9 +7,10 @@
 5. Run the virtualenv by entering the command `source bin/activate`.
 6. Install the required packages by running `pip3 install -r requirements.txt`.
 7. Navigate to hashtag_maker directory inside your current directory.
-8. Run the server by calling `python3 manage.py runserver`.
-9. Open up your preferred browser and go to `localhost:8000/main/`.
-10. You are now running and can use the Hashtag Maker.
+8. Run the command `python3 manage.py migrate`.
+9. Run the server by calling `python3 manage.py runserver`.
+10. Open up your preferred browser and go to `localhost:8000/main/`.
+11. You are now running and can use the Hashtag Maker.
 
 ## Functions
 1. Upload a document.
