@@ -5,7 +5,7 @@ certifi==2019.3.9
 chardet==3.0.4
 cliapp==1.20170827
 coverage==5.0.3
-cryptography==2.1.4
+cryptography==3.2
 cycler==0.10.0
 Django==1.11.16
 django-jchart==0.4.2
