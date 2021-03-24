@@ -51,7 +51,7 @@ requests-oauthlib==1.2.0
 requirements==0.1
 rest-pandas==1.0.0
 rpm==4.14.1
-rsa==4.0
+rsa==4.1
 scipy==1.2.2
 seaborn==0.9.0
 SecretStorage==2.3.1
